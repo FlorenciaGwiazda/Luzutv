@@ -56,22 +56,22 @@
     color: #01cfb6}
         footer {
             height: 250px;
+            background-color: #01cfb6;
         }
       
         #piefooter {
           margin-top: 50px;
         }
-        #mapa {
-          margin-top: 50px;
-        }
         .aredes {color: rgba var--bs-body-color-rgb}
-        .mapa {
+        #mapa {
             display: inline;
             float: right !important;
             margin-right: 20px;
+            margin-top: 20px;
+            background-color: #01cfb6; 
         }
 
-        .footeredes{ background-color: #01cfb6;}
+        #footeredes{ background-color: #01cfb6;}
     </style>
 </head>
 <body>
@@ -121,7 +121,7 @@
             <section>
                 <div class="row mt-3 justify-content-center ">
                     <div>
-                        <div class="cuadrantebt col-3 mx-auto text-center">
+                        <div class="cuadrantebt col-3 col-sm-2 mx-auto text-center">
                             <div class="h3 mx-auto">Estamos en vivo</div>
                         </div>
                     </div>
@@ -190,13 +190,14 @@
                 </div>
             </section>
         </main>
+
 <!-- Sección 3: Pie de Página con Mapa y Redes Sociales -->
-        <footer class=" footeredes mt-5">
-                <div class="row ">
-                    <div class="col-sm-3"></div>
-                    <div class="col">
+        <footer  class="mt-5">
+                <div  class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 col" >
                     
-                        <div id="piefooter" class="col align-items-center text-center  #010101 ">
+                        <div id="piefooter" class="col align-items-center text-center">
                             <a class="afooter" href="https://www.instagram.com/luzutv" target="_blank">
                                 <i class="fab fa-instagram fa-4x text-white mx-2"></i>
                             </a>
@@ -214,12 +215,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div id="mapa" class=" float-right mapa align-self-center">
+                    <div class="col col-sm-3">
+                        <div id="mapa" class=" float-right ">
                             <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.867989549321!2d-58.450356224455014!3d-34.55689765502669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5fd9df3bc4b%3A0x12e02e9955ba9d3d!2sLUZU%20TV!5e0!3m2!1ses!2sar!4v1695572414568!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        </div>                            
                     </div>
-                </div>
         </footer>
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
