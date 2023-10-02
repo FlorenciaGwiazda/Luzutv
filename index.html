@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link type="text/css" rel="stylesheet" href="https://jose-aguilar.com/scripts/jquery/rlightbox/css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+    <link type="text/css" rel="stylesheet" href="https://jose-aguilar.com/scripts/jquery/rlightbox/css/lightbox.min.css" />
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.rlightbox.min.js"></script>
+    <script type="text/javascript">
+            jQuery(function($) {
+                $( ".lb_galery" ).rlightbox({counterDelimiter: " de "});
+            });
+    </script>
     <style>
      .navbar-nav .nav-item  {
             border:solid yellow; 
@@ -24,18 +35,18 @@
         .d-flex{ text-align: right;  }
    
         body  {
-            background-color: black;
-            font-family:Arial, Helvetica, sans-serif;}
+            background-color: black;font-family:Arial, Helvetica, sans-serif;}
         .navbar {font-family:Arial, Helvetica, sans-serif;}
         
         header {
-            background-color: black;font-family:  'Chivo Mono', monospace;}
-       
+            background-color: black;font-family: Arial, Helvetica, sans-serif;}
+        .background-image {
+    background-image: url('fondo.png');}
         .cuadrantebt {
             background-color: red; 
             color: white; 
            /* display: inline-block; */
-            margin: 0 0 20px 0;;
+            margin: 0 0 20px 0;
         }
         img{cursor: pointer ;transition: 3s;}
         img:hover {transform: scale(1.1);
@@ -123,17 +134,19 @@
         </header>    
 
         <main>
-            <section>
+            <section >
                 <div class="row mt-3 justify-content-center ">
                     <div>
                         <div class="cuadrantebt col-3 col-sm-2 mx-auto text-center">
+
                             <div class="h3 mx-auto">ESTAMOS EN VIVO</div>
                         </div>
                     </div>
-                </div>     
-                <div class="row mb-6">
+                </div>  
+            </div>    
+                <div class="row mb-6 bg-image" style="background-image: url('img/fondo.png'); height: 100vh;">
                     <div class="col-md-3"></div>
-                    <div class="col mx-auto text-center">
+                    <div class="col mx-auto text-center mt-5">
                         <div class="embed-responsive embed-responsive-4by3">
                             <!-- Inserta el código de tu video de YouTube aquí -->
                 
@@ -184,14 +197,21 @@
             <section>
                 <div class="row justify-content-center mt-5">
                         <div class="col-12 col-sm-6 align-items-center text-center">
-                            <!--div class="d-flex flex-wrap justify-content-center"-->
-                            
-                                <img class="  border border-white" src="img/foto1.png" alt="Imagen 1" class="img-fluid">
-                                <img class=" img-fluid border border-white" src="img/foto2.png" alt="Imagen 2" class="img-fluid">
-                                <img class="  img-fluid border border-white" src="img/foto3.png" alt="Imagen 3" class="img-fluid">
-                                <img class="  img-fluid border border-white" src="img/foto4.png" alt="Imagen 4" class="img-fluid">
-                                <img class="  img-fluid border border-white" src="img/foto5.png" alt="Imagen 5" class="img-fluid">
-                            <!--/div-->
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <a class="lb_galery" href="img/foto 1.jpg">
+                                    <img class="img-fluid border-3 border-white" width="120" height="150" src="img/foto 1.jpg" alt="Imagen 1" >
+                                </a>
+                                <a class="lb_galery" href="img/foto 2.jpg">
+                                    <img class="img-fluid border-3 border-white" width="120" height="150" src="img/foto 2.jpg" alt="Imagen 2" >
+                                </a>
+                                <a class="lb_galery" href="img/foto 6.jpg">
+                                    <img class="img-fluid border-3 border-white" width="120" height="150" src="img/foto 6.jpg" alt="Imagen 3" >
+                                </a>                                                                                                                           
+                                <a class="lb_galery" href="img/foto 7.jpg">
+                                    <img class="img-fluid border-3 border-white" width="120" height="150" src="img/foto 7.jpg" alt="Imagen 3" >
+                                </a>                                                                                                                           
+
+                             </div> 
                         </div>
                 </div>
             </section>
