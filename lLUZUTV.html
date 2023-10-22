@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link type="text/css" rel="stylesheet" href="https://jose-aguilar.com/scripts/jquery/rlightbox/css/ui-lightness/jquery-ui-1.8.16.custom.css" />
+    <link type="text/css" rel="stylesheet" href="https://jose-aguilar.com/scripts/jquery/rlightbox/css/lightbox.min.css" />
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="https://jose-aguilar.com/scripts/jquery/rlightbox/lib/jquery.ui.rlightbox.min.js"></script>
+    <script type="text/javascript">
+            jQuery(function($) {
+                $( ".lb_galery" ).rlightbox({counterDelimiter: " de "});
+            });
+    </script>
+    <style>
+     .navbar-nav .nav-item  {
+            border:solid yellow; 
+            border-radius: 0; 
+            margin: 0 5px; 
+        }
+        .navbar-nav .nav-link {
+            padding: 5px 5px; 
+        }
+       .nav-usuario {width: 20px;}
+        .d-flex{ text-align: right;  }
+   
+        body  {
+            background-color: black;font-family:Arial, Helvetica, sans-serif;}
+        .navbar {font-family:Arial, Helvetica, sans-serif;}
+        
+        header {
+            background-color: black;font-family: Arial, Helvetica, sans-serif;}
+        .background-image {
+    background-image: url('fondo.png');}
+        .cuadrantebt {
+            background-color: red; 
+            color: white; 
+           /* display: inline-block; */
+            margin: 0 0 20px 0;
+        }
+        img{cursor: pointer ;transition: 3s;}
+        img:hover {transform: scale(1.1);
+                    transition: 2s; }
+        .custom-search-icon {
+            color: white; 
+        }
+        .frame-container {
+            /* text-align: center; */
+            border: 2px solid #ff0000; /* Borde rojo */
+            padding: 10px; 
+        }
+        .piepagina {
+            background-color: rgba(236, 204, 229, 0.52);
+            margin-top : 30px;
+        }
+        .aredes {
+    color: black}
+    .afooter {
+    color: #01cfb6}
+        footer {
+            height: 250px;
+            background-color: #01cfb6;
+        }
+      
+        #piefooter {
+          margin-top: 50px;
+        }
+        .aredes {color: rgba var--bs-body-color-rgb}
+        #mapa {
+            display: inline;
+            float: right !important;
+            margin-right: 20px;
+            margin-top: 20px;
+            background-color: #01cfb6; 
+        }
+
+        #footeredes{ background-color: #01cfb6;}
+    </style>
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <header class=" text-white">
+            
+            <div class="row justify-content-end">
+                <div class="col-3">
+                    <form class="mt-4 md-5">
+                        <div class="input-group">
+                            <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-light btn-sm" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" width="172" height="60" class="d-inline-block align-top" alt="Logo">
+                    </a>
+            
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="VIVO.html">Vivo </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="PROGRAMACION.html">Programación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="LUZUTV.html">Luzu Tv</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CONTACTANOS.html">Contactanos</a>
+                            </li>
+                            <li class="nav-usuario">
+                                <a class="fas fa-user text-white" href="usuario.html" style="font-size: 30px"></a>
+                            </li>
+                        </ul>
+                    </div>           
+            </nav>
+        </header>    
+
+        <main>
+            <section >
+                
+        
+                <div class="row text-center justify-content-center mt-6 piepagina  ">
+                    
+                <div class="text-center text-white  opacity-100">“INSPIRADOS EN EL ENTRETENIMIENTO, CREAMOS UN ESPACIO QUE CONECTA Y POTENCIA EN LAS DISTINTAS CULTURAS, IMPACTANDO POSITIVAMENTE EN NUESTRA COMUNIDAD”</div>
+                </div> 
+
+
+            </section>
+            <div class="row">
+                </div>
+            <section>
+
+                <div class="text-left text-white  fa-1x">
+            
+
+                    <P>CREADO EN NOVIEMBRE DEL 2020 CON LA ILUSIÓN DE ENTRETENER Y ACOMPAÑAR AL PUBLICO EN SU DÍA, DIVERTIRLOS Y QUE SEAN PARTE DE LO QUE OCURRE EN EL ESTUDIO Y EN NUESTRAS VIDAS. COMPARTIMOS EXPERIENCIAS Y RISAS.</p>
+
+                    <p> COMENZAMOS POR ZOOM EN UN CONTEXTO DE PANDEMIA Y FUIMOS CRECIENDO GRACIAS A USTEDES HASTA PODER ALCANZAR EL SUEÑO DEL ESPACIO FISICO.</p>
+                    
+                        <p>SE TRATA DE UNA PRODUCTORA DE CONTENIDOS AUDIOVISUALES QUE OPERA A TRAVÉS DE DIVERSAS PLATAFORMAS EN LÍNEA, DESTACANDO ESPECIALMENTE YOUTUBE. SU ENFOQUE PRINCIPAL ES LA CREACIÓN Y DIFUSIÓN DE UNA VARIEDAD DE PROGRAMAS Y CONTENIDOS VISUALES DISEÑADOS PARA ATRAER, PRINCIPALMENTE, A UNA AUDIENCIA JOVEN.</p>
+                    
+                    <p>  YA LLENAMOS GRAN REX Y LUNA PARK Y VAMOS POR MAS!</p>
+                    
+                     <p>   GRACIAS POR EL AGUANTE</P>
+                </div> 
+           
+        <!-- Sección 2: Fotos Centradas -->
+            <section> <div class="text-center">
+                <img src="img/foto 1.jpg" class="rounded" alt="...">
+              </div>
+                <div class="row justify-content-center mt-5">
+                        <div class="col-12 col-sm-6 align-items-center text-center">
+                            <div class="d-flex flex-wrap justify-content-center">
+                              
+
+
+                               
+                                <a class="lb_galery" href="img/foto 2.jpg">
+                                    <img class="img-fluid border-3 border-white" width="60" height="75" src="img/foto 2.jpg" alt="Imagen 2" >
+                                </a>
+                                <a class="lb_galery" href="img/foto 6.jpg">
+                                    <img class="img-fluid border-3 border-white" width="60" height="75" src="img/foto 6.jpg" alt="Imagen 3" >
+                                </a>                                                                                                                           
+                                <a class="lb_galery" href="img/foto 7.jpg">
+                                    <img class="img-fluid border-3 border-white" width="60" height="75" src="img/foto 7.jpg" alt="Imagen 3" >
+                                </a>                                                                                                                           
+
+                             </div> 
+                        </div>
+                </div>
+            </section>
+        </main>
+
+<!-- Sección 3: Pie de Página con Mapa y Redes Sociales -->
+        <footer  class="mt-5">
+                <div  class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 col" >
+                    
+                        <div id="piefooter" class="col align-items-center text-center">
+                            <a class="afooter" href="https://www.instagram.com/luzutv" target="_blank">
+                                <i class="fab fa-instagram fa-4x text-white mx-2"></i>
+                            </a>
+                            <a class="afooter" href="https://www.facebook.com/luzutv" target="_blank">
+                                <i class="fab fa-facebook fa-4x text-white mx-2"></i>
+                            </a>
+                            <a  class="afooter"href="https://twitter.com/luzutvok" target="_blank">
+                                <i class="fab fa-twitter fa-4x text-white mx-2"></i>
+                            </a>
+                            <a class="afooter" href="https://open.spotify.com/show/6S8mA8y62qbr2a5UWqMIoA?si=217d60bc2bf94277" target="_blank">
+                                <i class="fab fa-spotify fa-4x text-white mx-2"></i>
+                            </a>
+                            <a class="afooter" href="https://www.youtube.com/@luzutv" target="_blank">
+                                <i class="fab fa-youtube fa-4x text-white mx-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-sm-3">
+                        <div id="mapa" class=" float-right ">
+                            <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.867989549321!2d-58.450356224455014!3d-34.55689765502669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5fd9df3bc4b%3A0x12e02e9955ba9d3d!2sLUZU%20TV!5e0!3m2!1ses!2sar!4v1695572414568!5m2!1ses!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>                            
+                    </div>
+        </footer>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
