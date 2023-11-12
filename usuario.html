@@ -113,21 +113,25 @@
 <a class="fas fa-user text-white" href="#" style="font-size: 30px"></a>
 
 <div class="container text-center">
-    <form style="max-width: 300px; margin: 0 auto;">
+    <form style="max-width: 300px; margin: 0 auto;" action="login_registro/registrar.php" method="post">
       <div class="m-3">
         <p class="text-danger">NOTIFICACIONES PERSONALIZADAS Y NOVEDADES EXCLUSIVAS</p>
-        <label for="usuario" class="form-label"></label>
-        <input type="text" id="usuario" class="form-control border-0" placeholder="USUARIO">
+        <label for="nombre" class="form-label text-white">Usuario</label>
+        <input type="text" name="nombre" class="form-control border-0" placeholder="USUARIO">
       </div>
       <div class="m-3">
-        <label for="contrasena" class="form-label"></label>
-        <input type="text" id="contrasena" class="form-control border-0" placeholder="CONTRASEÑA">
+        <label for="email" class="form-label text-white">Email</label>
+        <input type="email" name="email" class="form-control border-0" placeholder="EMAIL">
       </div>
-      <button type="submit" class="btn btn-light" style="background-color: #ECCCE5;"> INGRESAR</button>
+      <div class="m-3">
+        <label for="password" class="form-label text-white">Contraseña </label>
+        <input type="password" name="password" class="form-control border-0" placeholder="CONTRASEÑA">
+      </div>
+        <button type="submit" class="btn btn-light mt-4" style="background-color: #ECCCE5;"> REGISTRARSE</button>
     </form>
   </div>
-  <p class="text-center">Crear Cuenta</p>
-  <p class="text-center">Has olvidado tu contraseña</p>
+<!--p class="text-center">Crear Cuenta</p-->
+  <!--p class="text-center">Has olvidado tu contraseña</p-->
        
         <footer  class="mt-5">
             <div  class="row ">
