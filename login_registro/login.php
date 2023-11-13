@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Conectar a la base de datos (cambia las credenciales según tu configuración)
-$conexion = new mysqli("localhost", "usuario_db", "contraseña_db", "nombre_db");
+$conexion = new mysqli("localhost", "flor", "segui2323", "florbasededatos");
 
 // Verificar la conexión
 if ($conexion->connect_error) {
@@ -9,19 +9,19 @@ if ($conexion->connect_error) {
 }
 
 // Recibir datos del formulario de inicio de sesión
-$nombre_usuario = $_POST["nombre_usuario"];
-$contraseña = $_POST["contraseña"];
+$nombre = $_POST["nombre"];
+$password = $_POST["password"];
 
 // Buscar al usuario en la base de datos
-$consulta = "SELECT id, nombre_usuario, contraseña FROM usuarios WHERE nombre_usuario = '$nombre_usuario'";
+$consulta = "SELECT id, nombre, password FROM usuario WHERE nombre = '$nombre'";
 $resultado = $conexion->query($consulta);
 
 if ($resultado->num_rows == 1) {
     $fila = $resultado->fetch_assoc();
-    if (password_verify($contraseña, $fila["contraseña"])) {
+    if (password_verify($password, $fila["password"])) {
         // Inicio de sesión exitoso
-        $_SESSION["usuario"] = $nombre_usuario;
-        header("Location: panel.php"); // Redirige a una página de panel o dashboard
+        $_SESSION["usuario"] = $nombre;
+        header("Location: http://localhost/luzutv"); // Redirige a una página de panel o dashboard
     } else {
         echo "Contraseña incorrecta.";
     }
